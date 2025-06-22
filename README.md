@@ -61,9 +61,18 @@ PlaylistPro asked me to complete the following tasks:
 
 ---
 
-## 📊 Executive Summary
+## 📊 Executive Summary & Business Recommendations
 
-This classification model helps PlaylistPro **proactively identify at-risk customers** and take **cost-effective actions** (like discounts or loyalty rewards) to retain them. With proper thresholds and targeting, this model can become a core part of PlaylistPro’s customer retention strategy.
+With our model, we cannot reliably predict which customers will churn.  
+However, we **can reasonably predict which users will not churn** — with **~85% accuracy**.  
+Our current framework lays a solid foundation to explore further modeling and new algorithms to improve predictive power.
+
+We engineered new features aimed at capturing overall listening activity to reduce dimensionality.  
+A custom pipeline was built to preprocess the dataset and train the model on previously observed churn outcomes.
+
+**Retention Expectation:**  
+Our model suggests PlaylistPro can retain **approximately 74%** of customers in the test data.  
+However, this assumption is based on the belief that **price is the primary factor driving churn** — further research into churn motivation is essential for accurate intervention.
 
 ---
 
